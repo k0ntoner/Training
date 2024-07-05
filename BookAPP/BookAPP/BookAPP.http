@@ -1,0 +1,26 @@
+@BookAPP_HostAddress = https://localhost:7211
+
+GET {{BookAPP_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{BookAPP_HostAddress}}/weatherforecast
+
+###
+
+POST {{BookAPP_HostAddress}}/api/bookitems
+Content-Type: application/json
+
+{
+    "id":3,
+    "title":"Book3",
+    "Description":"desc3"
+}
+
+###
+
+GET {{BookAPP_HostAddress}}/api/bookitems
+
+###
+
